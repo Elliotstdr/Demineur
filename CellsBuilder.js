@@ -30,12 +30,7 @@ export function choseMine(index){
             list_mines.push(new_mine);
         }
     }
-    //Pour chaque cellule contenant une mine, lui ajoute une classe "mine"
-    const cells = Array.from(document.querySelectorAll("#corps button"));
-    list_mines.forEach((mine) => {
-        cells[mine].classList.add("mine");
-        cells[mine].textContent = "OK";
-    })
+   
     return list_mines
 }
 
